@@ -2,12 +2,13 @@ a {
 	text-decoration:none;
 }
 section.menu a{
-
+	border-width: 4;
 	color:#AE7C78; 
 	text-decoration:none;
 }
 section.menu {
-	border: 4px double pink;
+	border-color: ;
+	border-style: solid;
     padding: 10px; /* Поля вокруг текста */
     margin-right: 5px; /* Отступ слева */
     display: flex;
@@ -51,11 +52,8 @@ section.intro a {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 20px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+	line-height: 40px;
+	color: #FFFFFF;
 }
 
 section.intro {
@@ -71,4 +69,26 @@ section.catalog ul {
 }
 section.catalog a {
 	line-height:50px;
+}
+section.menu-footer ul {
+	display: flex;
+	text-align: left;
+}
+section.menu-footer li {
+	padding: 10px;
+}
+section.slider a {
+	padding: 10px 10px;/* отступы от текста до краев */
+	text-decoration: none;/* убираем декорирование */
+	-moz-appearance: button; /* преобразование для Firefox */
+	-webkit-appearance: button; /* преобразование для Chromium */	
+	border-radius: 40px;
+	background: #D89999;
+	border-radius: 40px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
 }
