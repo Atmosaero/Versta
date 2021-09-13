@@ -1,30 +1,27 @@
-a { 
+a {
 	text-decoration:none;
 }
 section.menu a{
 	border-width: 4;
-	color:#AE7C78; 
+	color:#AE7C78;
 	text-decoration:none;
 }
 section.menu {
-	border-color: ;
+	border-color: #AE7C78;
 	border-style: solid;
-    padding: 10px; /* Поля вокруг текста */
-    margin-right: 5px; /* Отступ слева */
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
+  padding: 10px; /* Поля вокруг текста */
+  margin-right: 5px; /* Отступ слева */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color:#537CBC;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color:#537CBC;
 
-
-
-color: #AE7C78;
 }
 
 section.menu ul {
@@ -44,7 +41,7 @@ section.intro a {
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
 	-moz-appearance: button; /* преобразование для Firefox */
-	-webkit-appearance: button; /* преобразование для Chromium */	
+	-webkit-appearance: button; /* преобразование для Chromium */
 	border-radius: 40px;
 	background: #D89999;
 	border-radius: 40px;
@@ -55,9 +52,21 @@ section.intro a {
 	line-height: 40px;
 	color: #FFFFFF;
 }
-
-section.intro {
-
+section.intro h1 {
+	font-family: Playfair Display;
+	color: #AE7C78;
+}
+section.intro div {
+	display: flex;
+}
+section.intro div img {
+	position: absolute;
+}
+section.intro p{
+	color: #AE7C78;
+}
+section.intro h4{
+	color: #AE7C78;
 }
 
 section.intro div {
@@ -69,6 +78,13 @@ section.catalog ul {
 }
 section.catalog a {
 	line-height:50px;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+}
+div.blank {
+	color: #AE7C78;
 }
 section.menu-footer ul {
 	display: flex;
@@ -77,11 +93,14 @@ section.menu-footer ul {
 section.menu-footer li {
 	padding: 10px;
 }
+section.slider {
+	color: #AE7C78;
+}
 section.slider a {
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
 	-moz-appearance: button; /* преобразование для Firefox */
-	-webkit-appearance: button; /* преобразование для Chromium */	
+	-webkit-appearance: button; /* преобразование для Chromium */
 	border-radius: 40px;
 	background: #D89999;
 	border-radius: 40px;
@@ -91,4 +110,64 @@ section.slider a {
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
+}
+section.slider h1 {
+	font-family: Playfair Display;
+}
+section.Action h1{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+}
+section.Action p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+}
+section.Steps {
+
+}
+section.Steps h1 {
+	color: #AE7C78;
+}
+section.Steps img {
+
+}
+section.Steps div {
+
+	color: #AE7C78;
+	display: flex;
+}
+section.ReviewsBlock {
+	border-color: #AE7C78;
+	border-style: solid;
+	padding: 10px; /* Поля вокруг текста */
+	margin-right: 5px; /* Отступ слева */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #AE7C78;
+}
+section.ReviewsBlock div {
+	font-family: Montserrat;
+}
+section.News h1{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+	color: #AE7C78;
+}
+section.News p {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+	color: #AE7C78;
 }
