@@ -1,3 +1,8 @@
+body {
+	font-family: Montserrat;
+	font-size: 16px;
+	line-height: 20px;
+}
 a {
 	text-decoration:none;
 }
@@ -6,69 +11,74 @@ section.menu a{
 	color:#AE7C78;
 	text-decoration:none;
 }
-section.menu {
-	border-color: #AE7C78;
-	border-style: solid;
-  padding: 10px; /* Поля вокруг текста */
-  margin-right: 5px; /* Отступ слева */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color:#537CBC;
-
+.main-menu {
+	font-weight: 400;
+	padding: 22px;
+	margin-top: 20px;
+	border-top: 1px solid #AE7C78;
+	border-bottom: 1px solid #AE7C78;
+	width: 100%;
 }
 
+.menu {
+  text-align: center;
+  position: relative;
+}
+.logo {
+	position:absolute;
+	left: 46%;
+	top: 3px;
+}
 section.menu ul {
-	display: flex;
+	display: inline-block;
 }
 section.menu li {
-	padding: 10px;
+	padding-right: 90px;
+
 }
+.hspace {
+
+	padding-left: 150px;
+}
+
+
+
 section.menu a {
 	text-decoration: none;
+	
 
 }
 li {
 	list-style-type: none;
+	display: inline-block;
 }
 section.intro a {
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
-	-moz-appearance: button; /* преобразование для Firefox */
-	-webkit-appearance: button; /* преобразование для Chromium */
-	border-radius: 40px;
 	background: #D89999;
-	border-radius: 40px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 40px;
 	color: #FFFFFF;
+	
 }
-section.intro h1 {
+.intro-head h1 {
 	font-family: Playfair Display;
 	color: #AE7C78;
 }
-section.intro div {
-	display: flex;
-}
+
 section.intro div img {
 	position: absolute;
 }
-section.intro p{
+.intro-head p {
 	color: #AE7C78;
 }
 section.intro h4{
 	color: #AE7C78;
 }
+.intro-head {
+	display: flex;
+}
+.intro-main {
 
+}
 section.intro div {
 	display: flex;
 	text-align: left;
@@ -76,12 +86,12 @@ section.intro div {
 section.catalog ul {
 	display: flex;
 }
-section.catalog a {
-	line-height:50px;
-	font-family: Playfair Display;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 36px;
+.intro-head a {
+	color: white;
+	line-height:60px;
+	font-size: 16px;
+	background: #D89999;
+	border-radius: 40px;
 }
 div.blank {
 	color: #AE7C78;
@@ -94,19 +104,14 @@ section.menu-footer li {
 	padding: 10px;
 }
 section.slider {
+
 	color: #AE7C78;
 }
 section.slider a {
 	padding: 10px 10px;/* отступы от текста до краев */
 	text-decoration: none;/* убираем декорирование */
-	-moz-appearance: button; /* преобразование для Firefox */
-	-webkit-appearance: button; /* преобразование для Chromium */
-	border-radius: 40px;
 	background: #D89999;
 	border-radius: 40px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
@@ -128,18 +133,23 @@ section.Action p {
 	line-height: 29px;
 }
 section.Steps {
-
+	text-align:center
 }
 section.Steps h1 {
 	color: #AE7C78;
 }
-section.Steps img {
 
-}
 section.Steps div {
-
+	flex-wrap:wrap;
 	color: #AE7C78;
-	display: flex;
+	float: left; /*Задаем обтекание*/
+     
+     width: 320px; /*Фиксируем ширину блока*/
+     margin-right: 10px;
+     text-align: center; /*Центрируем текст по горизонтали*/
+}
+.pspace {
+	
 }
 section.ReviewsBlock {
 	border-color: #AE7C78;
@@ -153,6 +163,10 @@ section.ReviewsBlock {
 }
 section.ReviewsBlock div {
 	font-family: Montserrat;
+}
+section.News div {
+	flex-direction: row;
+	justify-content: stretch;
 }
 section.News h1{
 	font-family: Playfair Display;
