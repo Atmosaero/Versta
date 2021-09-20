@@ -74,10 +74,18 @@ section.intro h4{
 	color: #AE7C78;
 }
 .intro-head {
-	display: flex;
+    overflow: auto;
 }
 .intro-main {
-
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+div.intro-main h4 {
+	color: #AE7C78;
+}
+div.intro-main p {
+	color: #AE7C78;
 }
 section.intro div {
 	display: flex;
@@ -88,13 +96,14 @@ section.catalog ul {
 }
 .intro-head a {
 	color: white;
-	line-height:60px;
-	font-size: 16px;
+	line-height:40px;
+	font-size: 32px;
 	background: #D89999;
-	border-radius: 40px;
+	border-radius: 60px;
 }
 div.blank {
 	color: #AE7C78;
+	float: left;
 }
 section.menu-footer ul {
 	display: flex;
@@ -148,10 +157,23 @@ section.Steps div {
      margin-right: 10px;
      text-align: center; /*Центрируем текст по горизонтали*/
 }
-.pspace {
-	
+.pspace1 {
+	float: left;
 }
+.pspace2 {
+	float: right;
+}
+
+section.ReviewsBlock h1 {
+    align-items: center;
+    text-align: center;
+    
+
+}
+
 section.ReviewsBlock {
+	display: inline-block;
+	float: left;
 	border-color: #AE7C78;
 	border-style: solid;
 	padding: 10px; /* Поля вокруг текста */
@@ -163,6 +185,9 @@ section.ReviewsBlock {
 }
 section.ReviewsBlock div {
 	font-family: Montserrat;
+}
+.News {
+	float: left;
 }
 section.News div {
 	flex-direction: row;
