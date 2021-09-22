@@ -52,44 +52,73 @@ li {
 	list-style-type: none;
 	display: inline-block;
 }
-section.intro a {
-	padding: 10px 10px;/* отступы от текста до краев */
-	text-decoration: none;/* убираем декорирование */
-	background: #D89999;
-	color: #FFFFFF;
-	
+.advantage-list{
+	display: flex;
+	width: 100%;
 }
-.intro-head h1 {
-	font-family: Playfair Display;
+
+.advantage{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.advantage1{
+	padding-left: 102px;
+}
+
+.advantage1::before{
+	content: "";
+	position: absolute;
+	width: 82px;
+	height: 52px;
+	background: url(../img/icon3.jpg) no-repeat 0 0;
+	left: 0;
+	top: 0;
+}
+
+.advantage2{
+	padding-left: 72px;
+	margin-left: 49px;
+}
+
+.advantage2::before{
+	content: "";
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	background: url(../img/icon1.jpg) no-repeat 0 0;
+	left: 0;
+	top: 0;
+}
+
+.advantage3{
+	padding-left: 79px;
+	margin-left: 43px;
+}
+
+.advantage3::before{
+	content: "";
+	position: absolute;
+	width: 58.6px;
+	height: 52px;
+	background: url(../img/icon2.jpg) no-repeat 0 0;
+	left: 0;
+	top: 0;
+}
+
+.advantage dt{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 8px;
 	color: #AE7C78;
 }
 
-section.intro div img {
-	position: absolute;
-}
-.intro-head p {
-	color: #AE7C78;
-}
-section.intro h4{
-	color: #AE7C78;
-}
-.intro-head {
-    overflow: auto;
-}
-.intro-main {
-	display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-div.intro-main h4 {
-	color: #AE7C78;
-}
-div.intro-main p {
-	color: #AE7C78;
-}
-section.intro div {
-	display: flex;
-	text-align: left;
+.advantage dd{
+	width: 285px;
 }
 section.catalog ul {
 	display: flex;
@@ -176,7 +205,7 @@ section.ReviewsBlock {
 	float: left;
 	border-color: #AE7C78;
 	border-style: solid;
-	padding: 10px; /* Поля вокруг текста */
+	padding: 10px; 
 	margin-right: 5px; /* Отступ слева */
 	display: flex;
 	flex-direction: row;
@@ -209,4 +238,115 @@ section.News p {
 	font-size: 24px;
 	line-height: 29px;
 	color: #AE7C78;
+}
+
+.page-reviews .container{
+	border: 1px solid rgba(174, 124, 120, 1);
+	padding: 40px 44px 64px 44px;
+
+}
+
+.page-reviews h2{
+	margin-bottom: 40px;
+}
+
+.reviews{
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews blockquote{
+	text-align: center;
+	width: 300px;
+}
+
+.reviews blockquote p{
+	margin-bottom: 16px;
+}
+
+.reviews blockquote cite{
+	font-weight: 500;
+	font-style: normal;
+}
+.page-feedback{
+	background: url(../img/map.jpg) no-repeat;
+	background-size: cover;
+}
+
+.page-feedback .container{
+	padding: 52px 0px 72px 102px;
+}
+
+.feedback{
+	width: 386px;
+	background-color: rgba(247, 250, 252, 1);
+	padding: 40px 0 65px 35px;
+	text-align: left;
+}
+
+.feedback h2{
+	text-align: left;
+	margin-bottom: 42px;
+}
+
+.feedback ul{
+	list-style: none;
+}
+
+.feedback li{
+	margin-bottom: 30px;
+	max-width: 243px;
+}
+
+.feedback li p:first-of-type{
+	margin-bottom: 16px;
+}
+
+.feedback li:nth-child(1) p:nth-child(2),
+.feedback li:nth-child(2) p:nth-child(2){
+	font-weight: 500;
+}
+
+.feedback li a{
+	text-decoration: none;
+	color: #AE7C78;
+	font-weight: 500;
+}
+
+.feedback li:last-child{
+	margin-bottom: 0;
+}
+
+footer{
+	background-color: #AE7C78;
+}
+
+.nav-footer{
+	padding: 24px 0;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+
+.nav-footer .logo img{
+	filter: brightness(100) grayscale(100%);
+}
+
+.nav-footer ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav-footer ul li{
+	margin-right: 68px;
+}
+
+.nav-footer ul li:last-child{
+	margin-right: 0;
+}
+
+.nav-footer ul a{
+	text-decoration: none;
+	color: #fff;
 }
